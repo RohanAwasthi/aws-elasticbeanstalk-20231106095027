@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "my-default-app-2023-11-06-1699264227627"
+
+  links:
+    - url: https://github.com/RohanAwasthi/aws-elasticbeanstalk-20231106095027
+      title: "my-default-app-2023-11-06-1699264227627"
+      icon: code
+
+  labels:
+    system: web-apps
+    trackid: "aws-elasticbeanstalk-20231106095027"
+    environmentname: test-copilot-env-test5
+
+  tags:
+    - java
+    - aws
+    - "applicationtype-webapplication"
+
+  annotations:
+    # add elastic beanstalk annotation
+    jenkins.io/github-folder: 'custom-actions/tf-my-default-app-2023-11-06-1699264227627'
+    github.com/project-slug: RohanAwasthi/aws-elasticbeanstalk-20231106095027
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/linguist: https://github.com/ItRachii/spring-boot-ebs
+    sonarqube.org/project-key: 'demo-app/aws-elb-java'
+
+spec:
+  type: service
+  lifecycle: experimental
+  system: elasticbeanstalk
+  owner: "group:default/ey"
